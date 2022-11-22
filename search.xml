@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>idea常用插件</title>
+      <link href="/2022/11/22/idea-idea%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+      <url>/2022/11/22/idea-idea%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>为了防止更换电脑，特此将idea常用插件的安装以及使用方法进行整理。</p></blockquote><blockquote><p>注意！Alibaba的图片还未整理，图片在（E:\tmp\MyBlog\Alibaba），附网址：<a href="https://mp.weixin.qq.com/s/ZUFbRv3SFzD4vGRRCYW3Aw">这5款IDEA插件，堪称代码质量检查神器！ (qq.com)</a></p></blockquote><h1 id="一、Alibaba-Java-Coding-Guidelines"><a href="#一、Alibaba-Java-Coding-Guidelines" class="headerlink" title="一、Alibaba Java Coding Guidelines"></a>一、Alibaba Java Coding Guidelines</h1><h2 id="1、整体介绍"><a href="#1、整体介绍" class="headerlink" title="1、整体介绍"></a>1、整体介绍</h2><p>​Alibaba Java Coding Guidelines 专注于Java代码规范，目的是让开发者更加方便、快速规范代码格式。该插件在扫描代码后，将不符合规约的代码按 Blocker、Critical、Major 三个等级显示出来，并且大部分可以自动修复，它还基于 Inspection 机制提供了实时检测功能，编写代码的同时也能快速发现问题所在。</p><blockquote><p>阿里巴巴规约扫描包括：（1）OOP规约 （2）并发处理 （3）控制语句 （4）命名规约 （5）常量定义 （6）注释规范</p></blockquote><h2 id="2、安装步骤："><a href="#2、安装步骤：" class="headerlink" title="2、安装步骤："></a>2、安装步骤：</h2><p>File &gt; Settings &gt; Plugins &gt; Marketplace 搜索 “Alibaba Java Coding Guidelines”，按照提示进行安装，然后重启即可。</p><h2 id="3、使用说明："><a href="#3、使用说明：" class="headerlink" title="3、使用说明："></a>3、使用说明：</h2><h3 id="3-1、运行方式："><a href="#3-1、运行方式：" class="headerlink" title="3.1、运行方式："></a><strong>3.1、运行方式：</strong></h3><p>（1）可以Tools &gt; 阿里编码规约 &gt; 编码规约扫描。</p><p>（2）在编辑界面或者项目区域点击右键，在右键菜单中选择“编码规约扫描”即可：</p><p><img src="https://gitee.com/wangznan/typora/raw/master/JavaWeb/22-11-7%20MySQL%E5%9F%BA%E7%A1%80/%E5%88%9D%E5%A7%8B%E5%8C%96MySQL.png"></p><p><img src="https://source.fomal.cc/img/default_cover_5.webp"></p><h3 id="3-2、菜单功能："><a href="#3-2、菜单功能：" class="headerlink" title="3.2、菜单功能："></a><strong>3.2、菜单功能：</strong></h3><p>（1）编码规约扫描：开始扫描代码</p><p>（2）打开&#x2F;关闭实时检测功能：实时检测代码，一般机器性能比较好的话可以开启这项功能</p><p>（3）切换语言至英文：中英文切换</p><h3 id="3-3、运行结果："><a href="#3-3、运行结果：" class="headerlink" title="3.3、运行结果："></a><strong>3.3、运行结果：</strong></h3><p>扫描完成后显示结果如下，我们可以看到扫描结果主要分为 Blocker（阻挡者）、Critical（严重问题）、Major（主要的）三个大类，它们表示的是问题的严重程度，严重程度由高到低为：Blocker &gt; Critical &gt; Major，至于每一类中都会包含什么样的问题，图中的内容已经说明了一切。</p><p>选中其中的一个问题项目，会出现如下内容（如果当前鼠标点击的是最终项，右边区域显示的是其它的内容，后面会再讲到）：</p><p>（1）指定区域搜索同一类问题：</p><p>当点击③处的按钮时，会弹出如下按钮：</p><p>这里选择扫描区域，来扫描鼠标选中的同类问题。如果按照默认选择，那么运行后的结果就如下图所示：</p><p>这里我们可以看到，显示了整个Project中的所有该类的问题。</p><p>（2）预览具体的不规范代码：</p><p>如果点击的是最终的问题点或者问题所在的类文件，那显示的就是如下界面，预览该处不规范的代码。</p><p><strong>3.4、工具栏功能介绍：</strong></p><ul><li><p>（1）Rerun Inspection：重新运行一次扫描</p></li><li><p>（2）Close：关闭真个AJCG面板</p></li><li><p>（3）Expand All：展开结果的树状结构，整个结果是树状结构的。</p></li><li><p>（4）Collapse All：收起结果的树状结构</p></li><li><p>（5）Go Pre Problem：选择上一个问题</p></li><li><p>（6）Go Next Problem：选择下一个问题</p></li><li><p>（7）Help：帮助</p></li><li><p>（8）Group by Serverity：（不知道如何描述）</p></li><li><p>（9）Group by derectory：按目录分组&#x2F;按类名分组间切换</p></li><li><p>（10）Filter resoled items：过滤掉已经解决的项</p></li><li><p>（11）Autoscroll to Source：自动滚动到源码</p></li><li><p>（12）Export：导出，可以导出为XML和HTML两种格式</p></li><li><p>（13）Edit Settings：编辑设置</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见pom.xml配置</title>
+      <link href="/2022/11/21/JavaWeb-pom-xml/"/>
+      <url>/2022/11/21/JavaWeb-pom-xml/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>感觉pom.xml文件总是看之前的案例，有点麻烦，所以总结一下。</p></blockquote><h1 id="1、数据库连接-mysql-connector-java"><a href="#1、数据库连接-mysql-connector-java" class="headerlink" title="1、数据库连接(mysql-connector-java)"></a>1、数据库连接(mysql-connector-java)</h1><p><strong>使用原因：</strong>需要从数据库中获取数据，或者将数据存储到数据库中，这是必须导入的依赖。</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--mysql--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.30<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="2、实体-lombok"><a href="#2、实体-lombok" class="headerlink" title="2、实体(lombok)"></a>2、实体(lombok)</h1><p><strong>使用原因：</strong>在实体类中创建实体之后，需要进行有参，无参，getter and setter，toString优点繁琐，而用此方法节约时间。</p><p><strong>使用方法：</strong></p><p>​首先在pom文件中导入此依赖，然后在实体类上方加入**@Data**注解，即可。</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--Data实体--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.24<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="3、servlet"><a href="#3、servlet" class="headerlink" title="3、servlet"></a>3、servlet</h1><p><strong>使用原因</strong>：当设计到servlet和cookie技术的时候，使用。</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>4.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="4、Tomcat-Maven插件-版本太低"><a href="#4、Tomcat-Maven插件-版本太低" class="headerlink" title="4、Tomcat-Maven插件(版本太低)"></a>4、Tomcat-Maven插件(版本太低)</h1><p><strong>使用原因：</strong>在IDEA中使用本地Tomcat进行项目部署，相对来说步骤比较繁琐，所以我们需要一种更简便的方式来替换它，那就是直接使用Maven中的Tomcat插件来部署项目。</p><p><strong>使用方法：</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaWeb </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JavaWeb </tag>
+            
+            <tag> pom </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/11/08/hello-world/"/>
+      <url>/2022/11/08/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting,</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
+      <link href="/2022/11/08/test/"/>
+      <url>/2022/11/08/test/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>再探个人博客</title>
+      <link href="/2022/11/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/11/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h1><h2 id="1、安装npm及cnpm-Windows）"><a href="#1、安装npm及cnpm-Windows）" class="headerlink" title="1、安装npm及cnpm(Windows）"></a>1、安装npm及cnpm(Windows）</h2><p>【安装步骤】</p><p>一、安装node.js</p><p>1.前往<a href="http://nodejs.cn/download/">node.js官网</a>下载并安装工具，这里安装路径选到D盘，D:\Program Files\nodejs</p><p> 安装完毕后在命令行输入以下命令测试是否安装成功，正确会出现版本号</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>2.改变原有的环境变量，</p><p> (1)配置npm的全局模块的存放路径以及cache的路径，例如两个文件夹放在NodeJS的主目录下，便在NodeJs下建立”node_global”及”node_cache”两个文件夹，输入以下命令改变npm配置</p><p> <img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/%E6%94%B9%E5%8F%98%E5%8E%9F%E6%9C%89%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt="改变原有的环境变量"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\Program Files\nodejs\node_global&quot;</span><br><span class="line">npm config set cache &quot;D:\Program Files\nodejs\node_cache&quot;</span><br></pre></td></tr></table></figure><p>(2)在系统环境变量添加系统变量NODE_PATH，输入路径D:\Program Files\nodejs\node_global\node_modules，此后所安装的模块都会安装到改路径下</p><p>二、安装淘宝npm（cnpm）</p><p> 1.安装cnpm</p><p>  (1)输入以下命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>  (2)输入cnpm -v输入是否正常，这里肯定会出错。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure><p>  (3)添加系统变量path的内容</p><p>　　因为cnpm会被安装到D:\Program Files\nodejs\node_global下，而系统变量path并未包含该路径。在系统变量path下添加该路径即可正常使用cnpm;如下图配置</p><p><img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/%E6%B7%BB%E5%8A%A0%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F1.png" alt="添加系统变量1"></p><p><img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/%E6%B7%BB%E5%8A%A0%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F2.png" alt="添加系统变量2"></p><p>优化：定义出NODE_HOME变量,在Path中替换</p><p><img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/%E4%BC%98%E5%8C%961.png"></p><p><img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/%E4%BC%98%E5%8C%962.png"></p><h2 id="2、安装hexo"><a href="#2、安装hexo" class="headerlink" title="2、安装hexo"></a>2、安装hexo</h2><p>1、利用cnpm安装hexo</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>2、创建文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir e:\MyBlog</span><br></pre></td></tr></table></figure><p>3、在MyBlog文件夹下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">cnpm install</span><br></pre></td></tr></table></figure><p>4、这个时候一个基本的个人博客就搭建成功了，可以通过编译工具打开，hexo s ，然后输入localhost:4000,就可以啦。</p><p>扩展：升级hexo</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># 使用淘宝源的 cnpm 替换 npm</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">cnpm install -g cnpm                 # 升级 npm</span><br><span class="line">cnpm cache clean -f                 # 清除 npm 缓存</span><br><span class="line"></span><br><span class="line">===更新 hexo: 进入 blog 目录，执行如下命令=== </span><br><span class="line"># 更新 package.json 中的 hexo 及个插件版本</span><br><span class="line">cnpm install -g npm-check           # 检查之前安装的插件，都有哪些是可以升级的 </span><br><span class="line">cnpm install -g npm-upgrade         # 升级系统中的插件</span><br><span class="line">npm-check</span><br><span class="line">npm-upgrade</span><br><span class="line"></span><br><span class="line"># 更新 hexo 及所有插件</span><br><span class="line">cnpm update</span><br><span class="line"></span><br><span class="line"># 确认 hexo 已经更新</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h1 id="遇见的问题"><a href="#遇见的问题" class="headerlink" title="遇见的问题"></a>遇见的问题</h1><h2 id="1、淘宝镜像问题"><a href="#1、淘宝镜像问题" class="headerlink" title="1、淘宝镜像问题"></a>1、淘宝镜像问题</h2><p>也许会失败，现在的解决方法就是按照操作步骤1，严格执行。</p><h2 id="2、hexo-init-失败"><a href="#2、hexo-init-失败" class="headerlink" title="2、hexo init 失败"></a>2、hexo init 失败</h2><p>第一步就是打开dev-sidecar工具；</p><p>也许还会出现这个问题</p><p><img src="https://gitee.com/wangznan/typora/raw/master/MyBlog/%E6%95%99%E7%A8%8B/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E5%A4%B1%E8%B4%A51.png" alt="hexo初始化失败1"></p><p>在hexo init 之后 进行cnpm install 就可以了。</p><h3 id="1、Spawn-failed"><a href="#1、Spawn-failed" class="headerlink" title="1、Spawn failed"></a>1、Spawn failed</h3><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>​问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容，多余本地提交之类的导致了报错。总之是本地文件的问题。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (E:\MyBlog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at ChildProcess.cp.emit (E:\MyBlog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br></pre></td></tr></table></figure><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">进入站点根目录</span><br><span class="line">cd E:/hexo</span><br><span class="line"> </span><br><span class="line">删除git提交内容文件夹</span><br><span class="line">rm -rf .deploy_git/</span><br><span class="line"> </span><br><span class="line">执行</span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line"> </span><br><span class="line">最后</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><h3 id="2、上传文章"><a href="#2、上传文章" class="headerlink" title="2、上传文章"></a>2、上传文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean</span><br><span class="line">$hexo generate</span><br><span class="line">$hexo deploy</span><br></pre></td></tr></table></figure><h1 id="未完成之事"><a href="#未完成之事" class="headerlink" title="未完成之事"></a>未完成之事</h1><h2 id="1、社交图标"><a href="#1、社交图标" class="headerlink" title="1、社交图标"></a>1、社交图标</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 个人博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
